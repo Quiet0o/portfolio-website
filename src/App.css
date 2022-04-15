@@ -1,42 +1,63 @@
-.App {
-  text-align: center;
-}
+*{
+  padding: 0;
+  margin: 0;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* css variables */
+  --main-bg-color: rgb(61, 61, 61);
+  --link-color: rgb(105, 175, 105);;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* menu */
+.main-menu{
+  position:sticky;
+  height:8vh;
+  background: rgb(43, 43, 43);
+  width: 100vw;
+  display:flex;
+  align-items: left;
+  top: 0;
+  align-self: flex-start;
+}
+.main-menu>svg{
+  height: 7vh;
+  padding:0.5em;
+  color:white;
+  width: 8vw;
+}
+.menu-list{
+  width: 90vw;
+  padding: 1em;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+}
+.menu-list>ol{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+}
+.menu-list>ol>li{
+  margin: 0.5rem;
+  font-size:1.2rem;
+}
+.menu-list>ol>li>a>span{
+ color: var(--link-color);
+}
+.menu-list>ol>li>a{
+  color:white;
+  text-decoration: none;
+
+}
+.menu-list>ol>li>a:hover{
+  color: var(--link-color);
+  transition: color 300ms linear;
+
+}
+/* main page */
+.hero-page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
+  background:  var(--main-bg-color);
 }
