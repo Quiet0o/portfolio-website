@@ -1,10 +1,11 @@
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: 'Roboto Mono', monospace;
-/* css variables */
+  /* css variables */
   --main-bg-color: rgb(43, 43, 43);
-  --link-color: rgb(105, 175, 105);;
+  --link-color: rgb(105, 175, 105);
+  ;
 
 }
 
@@ -14,70 +15,79 @@
   width: 0px;
 }
 
-/* menu */
-.main-menu{
-  position:sticky;
-  height:8vh;
-  background:  var(--main-bg-color);
+body {
+  background-color: var(--main-bg-color);
+}
 
+/* menu */
+.main-menu {
+  position: sticky;
+  height: 8vh;
+  background: rgba(42, 42, 42, 0.9);
+  backdrop-filter: blur(5px);
   width: 100vw;
-  display:flex;
+  display: flex;
   top: 0;
   justify-content: space-around;
 
 }
-.main-menu>svg{
+
+.main-menu>svg {
   height: 50px;
-  padding:1em;
-  color:white;
+  padding: 1em;
+  color: white;
   width: 50px;
 }
-.menu-list{
+
+.menu-list {
   width: 90vw;
   padding: 1em;
   display: flex;
   justify-content: flex-end;
 }
-.menu-list>ol{
+
+.menu-list>ol {
   list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.menu-list>ol>li{
+
+.menu-list>ol>li {
   margin: 0.5rem;
-  font-size:1rem;
+  font-size: 1rem;
 }
-span{
- color: var(--link-color);
+
+span {
+  color: var(--link-color);
 }
-.menu-list>ol>li>a{
-  color:white;
+
+.menu-list>ol>li>a {
+  color: white;
   text-decoration: none;
 
 }
-.menu-list>ol>li>a:hover{
+
+.menu-list>ol>li>a:hover {
   color: var(--link-color);
   transition: color 300ms linear;
 
 }
 
-
-a
-{
+a {
   text-decoration: none;
   color: #232323;
 
   transition: color 0.3s ease;
 }
 
-a:hover
-{
+a:hover {
   color: tomato;
 }
 
 /* main page */
-.hero-page, .about-page{
+.hero-page,
+.about-page {
   width: 100vw;
   height: 92vh;
   display: flex;
@@ -86,34 +96,51 @@ a:hover
   flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
-  background:  var(--main-bg-color);
+  background: var(--main-bg-color);
 }
-.welcome-page {
+
+.about-page {
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+}
+
+.welcome-page,
+.about-me-text {
   display: flex;
-  width: 30vw;
+  width: 45vw;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-.welcome-page>h1{
-  margin-top:1rem;
-  font-size:3rem;
+
+.welcome-page>h1 {
+  margin-top: 1rem;
+  font-size: 5rem;
   color: #fff;
 }
-.welcome-page>h2{
-  font-size:3rem;
+
+.welcome-page>h2 {
+  font-size: 3rem;
 }
-.welcome-page>p{
+
+.welcome-page>p,
+.about-me-text>p {
   color: rgba(255, 255, 255, 0.8);
   margin-top: 1rem;
 }
 
-.arrow{
+.about-me-text>p {
+  color: #fff;
+}
+
+.arrow {
   position: absolute;
   top: 90%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.arrow span{
+
+.arrow span {
   display: block;
   width: 30px;
   height: 30px;
@@ -123,22 +150,39 @@ a:hover
   margin: -10px;
   animation: animate 2s infinite;
 }
-.arrow span:nth-child(2){
+
+.arrow span:nth-child(2) {
   animation-delay: -0.2s;
 }
-.arrow span:nth-child(3){
+
+.arrow span:nth-child(3) {
   animation-delay: -0.4s;
 }
+
 @keyframes animate {
-  0%{
-      opacity: 0;
-      transform: rotate(45deg) translate(-20px,-20px);
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
   }
-  50%{
-      opacity: 1;
+
+  50% {
+    opacity: 1;
   }
-  100%{
-      opacity: 0;
-      transform: rotate(45deg) translate(20px,20px);
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
   }
+}
+
+@media only screen and (max-width: 1000px){
+  .welcome-page,
+  .about-me-text {
+    width: 80vw;
+
+  }
+  .welcome-page>h1{
+    font-size: 5rem;
+  }
+
 }
