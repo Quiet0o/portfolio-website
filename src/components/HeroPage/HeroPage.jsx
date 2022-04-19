@@ -33,7 +33,13 @@ const HeroPage = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
             repellat vitae sit. Animi, odit praesentium libero amet quae alias
             enim consequuntur officia sed atque ex soluta vitae maiores! Labore,
-            quidem?
+            quidem?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Minus culpa molestiae vitae quam sunt asperiores ipsum natus, ullam
+            dolor distinctio accusamus, reiciendis itaque? Atque repellat est
+            officia cumque facilis quae. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Quos, excepturi vel soluta asperiores nisi
+            voluptates sapiente corrupti quibusdam impedit magnam repudiandae.
+            Eveniet, officia quaerat aliquam nisi tempora iure asperiores animi!
           </p>
         </div>
         <div className="about-me-img">

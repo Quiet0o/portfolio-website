@@ -32,16 +32,18 @@ body {
 
 }
 
-.main-menu>svg {
+.main-menu>a>svg {
   height: 50px;
   padding: 1em;
   color: white;
   width: 50px;
 }
-
+.main-menu>a {
+  cursor: pointer;
+}
 .menu-list {
   width: 90vw;
-  padding: 1em;
+  /* padding: 1em; */
   display: flex;
   height: 8vh;
   justify-content: flex-end;
@@ -196,10 +198,14 @@ a:hover {
     width: 80vw;
   }
   .menu-list{
-  height:5vh;
+    height:5vh;
+
   }
-  .menu-list>ol>li>a>span {
-    display: none;
+  .menu-list>ol>li
+  {
+    padding-top: 1rem;
+    margin: 1rem;
+    font-size:1rem
   }
   .welcome-page>h1{
     font-size: 3.5rem;
@@ -215,3 +221,9 @@ a:hover {
     height: 15px;
   }
 }
+@media only screen and (max-width: 400px){
+  .menu-list>ol{
+    display: none;
+  }
+}
+
