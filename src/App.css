@@ -43,6 +43,7 @@ body {
   width: 90vw;
   padding: 1em;
   display: flex;
+  height: 8vh;
   justify-content: flex-end;
 }
 
@@ -193,7 +194,9 @@ a:hover {
   .welcome-page,
   .about-me-text {
     width: 80vw;
-
+  }
+  .menu-list{
+  height:5vh;
   }
   .menu-list>ol>li>a>span {
     display: none;
@@ -208,7 +211,7 @@ a:hover {
     top:93%;
   }
   .arrow span{
-    width: 20px;
-    height:20px;
+    width: 15px;
+    height: 15px;
   }
 }
