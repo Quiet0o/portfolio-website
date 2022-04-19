@@ -197,6 +197,9 @@ a:hover {
   .about-me-text {
     width: 80vw;
   }
+  img{
+    width: 80vw;
+  }
   .menu-list{
     height:5vh;
 
