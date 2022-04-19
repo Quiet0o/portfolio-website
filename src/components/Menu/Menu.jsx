@@ -15,7 +15,6 @@ const Menu = () => {
       </svg>
 
       <div className="menu-list">
-
         <ol>
           <li>
             <a href="">

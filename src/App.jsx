@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import HeroPage from './HeroPage/HeroPage'
-import Menu from './Menu/Menu'
+import "./App.css";
+import HeroPage from "./components/HeroPage/HeroPage";
+import Menu from "./components/Menu/Menu";
+import Projects from "./components/Projects/Projects";
 
 function App() {
-
   return (
     <div className="App">
-        <Menu/>
-        <HeroPage/>
+      {/* <Menu/> */}
+      <Menu />
+      <HeroPage />
+      <Projects />
+      {/* <HeroPage/> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

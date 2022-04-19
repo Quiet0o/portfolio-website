@@ -19,7 +19,7 @@ const HeroPage = () => {
           </p>
         </div>
       </div>
-      <div class="arrow">
+      <div className="arrow">
         <span></span>
         <span></span>
         <span></span>
@@ -27,10 +27,9 @@ const HeroPage = () => {
       <div className="about-page">
         <div className="about-me-text">
           <h2>
-            <span>0.1</span> I'm web developer <hr/>
+            <span>0.1</span> I'm web developer <hr />
           </h2>
           <p>
-
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
             repellat vitae sit. Animi, odit praesentium libero amet quae alias
             enim consequuntur officia sed atque ex soluta vitae maiores! Labore,
