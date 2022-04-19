@@ -204,4 +204,11 @@ a:hover {
   .welcome-page>h2{
     font-size: 1.5rem;
   }
+  .arrow{
+    top:93%;
+  }
+  .arrow span{
+    width: 20px;
+    height:20px;
+  }
 }
