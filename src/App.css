@@ -5,6 +5,7 @@
   /* css variables */
   --main-bg-color: rgb(15, 15, 15);
   --link-color: rgb(144, 247, 144);
+  --font-color: rgb(255, 255, 255);
   --arrow-color: #acacac;
 
 }
@@ -22,33 +23,38 @@ body {
 /* menu */
 .main-menu {
   position: sticky;
-  height: 8vh;
+  height: 10vh;
+  z-index: 999;
   background: rgba(var(--main-bg-color) 0.8);
   backdrop-filter: blur(10px);
-  width: 100vw;
   display: flex;
   top: 0;
   justify-content: space-around;
 
 }
 
-.main-menu>a>svg {
-  height: 50px;
-  padding: 1em;
+.menu-logo>a>svg {
   color: white;
   width: 50px;
 }
-.main-menu>a {
+.menu-logo>a {
   cursor: pointer;
 }
-.menu-list {
-  width: 90vw;
-  /* padding: 1em; */
+.menu-list,.menu-logo {
+  width: 86vw;
   display: flex;
-  height: 8vh;
+  height: auto;
   justify-content: flex-end;
 }
-
+.menu-logo{
+  width: 10vw;
+  margin-left: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  height:auto;
+}
 .menu-list>ol {
   list-style: none;
   display: flex;
@@ -57,8 +63,8 @@ body {
 }
 
 .menu-list>ol>li {
-  margin: 0.5rem;
-  font-size: 1rem;
+  margin: 1rem;
+  font-size: 1.2rem;
 }
 
 span {
@@ -66,7 +72,7 @@ span {
 }
 
 .menu-list>ol>li>a {
-  color: white;
+  color: var(--font-color);
   text-decoration: none;
 
 }
@@ -94,7 +100,7 @@ a:hover {
   width: 100vw;
   height: 92vh;
   display: flex;
-  color: #fff;
+  color: var(--font-color);
   justify-content: center;
   flex-direction: column;
   align-content: center;
@@ -115,11 +121,13 @@ a:hover {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-
+.about-me-text{
+  width: 35vw;
+}
 .welcome-page>h1 {
   margin-top: 1rem;
   font-size: 5rem;
-  color: #fff;
+  color: var(--font-color);
 }
 
 .welcome-page>h2 {
@@ -128,12 +136,17 @@ a:hover {
 
 .welcome-page>p,
 .about-me-text>p {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--font-color);
+  opacity: 0.8;
   margin-top: 1rem;
 }
-
-.about-me-text>p {
-  color: #fff;
+.about-me-img{
+  width: 420px;
+  height:420px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
 }
 
 .arrow {
@@ -145,8 +158,8 @@ a:hover {
 
 .arrow span {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-bottom: 5px solid var( --arrow-color);
   border-right: 5px solid var( --arrow-color);
   transform: rotate(45deg);
@@ -161,6 +174,7 @@ a:hover {
 .arrow span:nth-child(3) {
   animation-delay: -0.4s;
 }
+
 
 @keyframes animate {
   0% {
@@ -178,7 +192,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1100px){
   .welcome-page,
   .about-me-text {
     width: 80vw;
@@ -200,15 +214,9 @@ a:hover {
   img{
     width: 80vw;
   }
-  .menu-list{
-    height:5vh;
-
-  }
   .menu-list>ol>li
   {
-    padding-top: 1rem;
     margin: 1rem;
-    font-size:1rem
   }
   .welcome-page>h1{
     font-size: 3.5rem;
@@ -222,6 +230,9 @@ a:hover {
   .arrow span{
     width: 15px;
     height: 15px;
+  }
+  .menu-logo{
+    margin-left: 4vw;
   }
 }
 @media only screen and (max-width: 400px){
