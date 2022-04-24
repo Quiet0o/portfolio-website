@@ -22,10 +22,9 @@ body {
 
 /* menu */
 .main-menu {
-  position: sticky;
+  position: fixed;
   height: 10vh;
   z-index: 999;
-  background: rgba(var(--main-bg-color) 0.8);
   backdrop-filter: blur(10px);
   display: flex;
   top: 0;
@@ -37,24 +36,29 @@ body {
   color: white;
   width: 50px;
 }
+
 .menu-logo>a {
   cursor: pointer;
 }
-.menu-list,.menu-logo {
+
+.menu-list,
+.menu-logo {
   width: 86vw;
   display: flex;
   height: auto;
   justify-content: flex-end;
 }
-.menu-logo{
+
+.menu-logo {
   width: 10vw;
   margin-left: 2vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
-  height:auto;
+  height: auto;
 }
+
 .menu-list>ol {
   list-style: none;
   display: flex;
@@ -62,26 +66,36 @@ body {
   align-items: center;
 }
 
+nav>#box>#entries>ol {
+  list-style: none;
+}
+
 .menu-list>ol>li {
   margin: 1rem;
   font-size: 1.2rem;
 }
-
+nav>#box>#entries>ol>li{
+font-size: 2rem;
+margin: 3rem;
+}
 span {
   color: var(--link-color);
 }
 
-.menu-list>ol>li>a {
+.menu-list>ol>li>a,
+nav>#box>#entries>ol>li>a {
   color: var(--font-color);
   text-decoration: none;
 
 }
 
-.menu-list>ol>li>a:hover {
+.menu-list>ol>li>a:hover,
+nav>#box>#entries>ol>li>a:hover {
   color: var(--link-color);
   transition: color 300ms linear;
 
 }
+
 /* https://i.postimg.cc/SxVJJxz0/i92oj95571698.jpg */
 a {
   text-decoration: none;
@@ -121,9 +135,11 @@ a:hover {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-.about-me-text{
+
+.about-me-text {
   width: 35vw;
 }
+
 .welcome-page>h1 {
   margin-top: 1rem;
   font-size: 5rem;
@@ -140,9 +156,10 @@ a:hover {
   opacity: 0.8;
   margin-top: 1rem;
 }
-.about-me-img{
+
+.about-me-img {
   width: 420px;
-  height:420px;
+  height: 420px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -160,8 +177,8 @@ a:hover {
   display: block;
   width: 20px;
   height: 20px;
-  border-bottom: 5px solid var( --arrow-color);
-  border-right: 5px solid var( --arrow-color);
+  border-bottom: 5px solid var(--arrow-color);
+  border-right: 5px solid var(--arrow-color);
   transform: rotate(45deg);
   margin: -10px;
   animation: animate 2s infinite;
@@ -175,6 +192,86 @@ a:hover {
   animation-delay: -0.4s;
 }
 
+#open-nav {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  left: 0;
+  transition: .7s ease-out;
+}
+
+#open-nav:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#burger {
+  position: fixed;
+  height: 3px;
+  width: 40px;
+  transition: 250ms;
+  background-color: var(--font-color);
+}
+
+#burger:before,
+#burger:after {
+  content: '';
+  position: absolute;
+  background-color: var(--font-color);
+  height: 3px;
+  ;
+  width: 40px;
+  border-radius: 7px;
+  transition: 300ms;
+}
+
+#burger:before {
+  top: -500%;
+}
+
+#burger:after {
+  top: 500%;
+}
+
+.burger-close {
+  background: none !important;
+}
+
+.burger-close {
+  background: none !important;
+}
+
+.burger-close:before,
+.burger-close:after {
+  top: 0 !important;
+}
+
+.burger-close:before {
+  transform: rotate(-45deg) !important;
+}
+
+.burger-close:after {
+  transform: rotate(45deg) !important;
+}
+
+nav {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  /* background:red; */
+  backdrop-filter: blur(10px);
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  animation: nav-blur 150ms steps(50) forwards;
+}
+
+.nav-open {
+  display: flex;
+}
 
 @keyframes animate {
   0% {
@@ -192,52 +289,67 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1100px) {
+
   .welcome-page,
   .about-me-text {
     width: 80vw;
 
   }
+
   .menu-list>ol>li>a>span {
     display: none;
   }
-  .welcome-page>h1{
+
+  .welcome-page>h1 {
     font-size: 5rem;
   }
 
+  .menu-list>ol {
+    display: none;
+  }
+
+  #open-nav {
+    display: flex;
+  }
 }
-@media only screen and (max-width: 500px){
+
+@media only screen and (max-width: 500px) {
+
   .welcome-page,
   .about-me-text {
     width: 80vw;
   }
-  img{
+
+  img {
     width: 80vw;
   }
-  .menu-list>ol>li
-  {
+
+  .menu-list>ol>li {
     margin: 1rem;
   }
-  .welcome-page>h1{
+
+  .welcome-page>h1 {
     font-size: 3.5rem;
   }
-  .welcome-page>h2{
+
+  .welcome-page>h2 {
     font-size: 1.5rem;
   }
-  .arrow{
-    top:93%;
+
+  .arrow {
+    top: 93%;
   }
-  .arrow span{
+
+  .arrow span {
     width: 15px;
     height: 15px;
   }
-  .menu-logo{
+
+  .menu-logo {
     margin-left: 4vw;
   }
-}
-@media only screen and (max-width: 400px){
-  .menu-list>ol{
-    display: none;
-  }
+
 }
 
+@media only screen and (max-width: 400px) {}
