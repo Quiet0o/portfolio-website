@@ -317,6 +317,10 @@ nav {
     width: 80vw;
   }
 
+  img {
+    width: auto;
+  }
+
   .menu-list>ol>li {
     margin: 1rem;
   }
