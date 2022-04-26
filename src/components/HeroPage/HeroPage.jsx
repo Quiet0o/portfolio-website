@@ -3,7 +3,7 @@ import React from "react";
 const HeroPage = () => {
   return (
     <>
-      <div className="hero-page">
+      <div className="hero-page" id="home">
         <div className="welcome-page">
           <span>Welcome my name is</span>
 
@@ -25,7 +25,7 @@ const HeroPage = () => {
         <span></span>
       </div>
       <div className="about-page">
-        <div className="about-me-text">
+        <div className="about-me-text" id="about">
           <h2>
             <span>0.1</span> I'm web developer <hr />
           </h2>

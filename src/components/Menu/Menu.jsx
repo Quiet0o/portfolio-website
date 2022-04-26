@@ -42,12 +42,12 @@ const Menu = () => {
         </div>
         <ol>
           <li>
-            <a href="">
+            <a href="#home">
               <span>01.</span> Home
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#about">
               <span>02.</span> About
             </a>
           </li>
@@ -70,22 +70,22 @@ const Menu = () => {
        <div id='entries'>
        <ol>
            <li>
-             <a href="">
+             <a href="#home" onClick={toggleClass}>
                <span>01.</span> Home
              </a>
            </li>
            <li>
-             <a href="">
+             <a href="#about" onClick={toggleClass}>
                <span>02.</span> About
              </a>
            </li>
            <li>
-             <a href="">
+             <a href="" onClick={toggleClass}>
                <span>03.</span> Projects
              </a>
            </li>
            <li>
-             <a href="">
+             <a href="" onClick={toggleClass}>
                <span>04.</span> Contact
              </a>
            </li>
