@@ -21,7 +21,7 @@ body {
 }
 
 /* menu */
-.main-menu {
+.main-menu ,.main-menu-mobile{
   position: fixed;
   height: 10vh;
   z-index: 999;
@@ -31,9 +31,12 @@ body {
   justify-content: space-around;
 
 }
+.main-menu-mobile{
+  backdrop-filter: blur(0px);
 
+}
 .menu-logo>a>svg {
-  color: white;
+  color: var(--font-color);
   width: 50px;
 }
 
@@ -97,16 +100,6 @@ nav>#box>#entries>ol>li>a:hover {
 }
 
 /* https://i.postimg.cc/SxVJJxz0/i92oj95571698.jpg */
-a {
-  text-decoration: none;
-  color: #232323;
-
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: tomato;
-}
 
 /* main page */
 .hero-page,

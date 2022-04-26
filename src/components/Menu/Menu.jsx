@@ -5,11 +5,18 @@ const Menu = () => {
   const [isActive, setActive] = useState(false);
   const toggleClass = () => {
     setActive(!isActive);
+    if (isActive == true) {
+        document.body.style.overflow=""
+    }
+    else{
+      document.body.style.overflow="hidden"
+
+    }
   };
 
   return (
     <>
-    <div className="main-menu">
+    <div className={isActive ? 'main-menu-mobile': "main-menu"}>
       <div className="menu-logo">
         <a href="https://agency.fenze.dev">
           <svg
