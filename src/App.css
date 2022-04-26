@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Roboto Mono', monospace;
+  
   /* css variables */
   --main-bg-color: rgb(15, 15, 15);
   --link-color: rgb(144, 247, 144);
@@ -11,9 +12,10 @@
 }
 
 
-html{
+html {
   scroll-behavior: smooth;
 }
+
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 0px;
@@ -24,7 +26,8 @@ body {
 }
 
 /* menu */
-.main-menu ,.main-menu-mobile{
+.main-menu,
+.main-menu-mobile {
   position: fixed;
   height: 10vh;
   z-index: 999;
@@ -34,10 +37,12 @@ body {
   justify-content: space-around;
 
 }
-.main-menu-mobile{
+
+.main-menu-mobile {
   backdrop-filter: blur(0px);
 
 }
+
 .menu-logo>a>svg {
   color: var(--font-color);
   width: 50px;
@@ -80,10 +85,12 @@ nav>#box>#entries>ol {
   margin: 1rem;
   font-size: 1.2rem;
 }
-nav>#box>#entries>ol>li{
-font-size: 2rem;
-margin: 3rem;
+
+nav>#box>#entries>ol>li {
+  font-size: 2rem;
+  margin: 3rem;
 }
+
 span {
   color: var(--link-color);
 }
@@ -108,7 +115,7 @@ nav>#box>#entries>ol>li>a:hover {
 .hero-page,
 .about-page {
   width: 100vw;
-  height: 92vh;
+  min-height: 100vh;
   display: flex;
   color: var(--font-color);
   justify-content: center;
@@ -204,6 +211,7 @@ nav>#box>#entries>ol>li>a:hover {
   height: 3px;
   width: 40px;
   transition: 250ms;
+  border-radius: 7px;
   background-color: var(--font-color);
 }
 
@@ -213,7 +221,6 @@ nav>#box>#entries>ol>li>a:hover {
   position: absolute;
   background-color: var(--font-color);
   height: 3px;
-  ;
   width: 40px;
   border-radius: 7px;
   transition: 300ms;
@@ -253,7 +260,6 @@ nav {
   display: none;
   justify-content: center;
   align-items: center;
-  /* background:red; */
   backdrop-filter: blur(10px);
   width: 100%;
   height: 100%;
