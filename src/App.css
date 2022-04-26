@@ -113,7 +113,9 @@ nav>#box>#entries>ol>li>a:hover {
 
 /* main page */
 .hero-page,
-.about-page {
+.about-page,
+.project-page,
+.projects-conteiner {
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -125,10 +127,20 @@ nav>#box>#entries>ol>li>a:hover {
   background: var(--main-bg-color);
 }
 
-.about-page {
-  height: 100vh;
+.about-page,.projects-conteiner {
   flex-direction: row;
   align-items: center;
+}
+
+.project-page {
+  min-height: 50vh;
+}
+.project {
+  min-height: 20vw;
+  min-width: 20vw;
+  border: 1px solid;
+  border-radius: 20px;
+  margin: 2em;
 }
 
 .welcome-page,
@@ -137,6 +149,15 @@ nav>#box>#entries>ol>li>a:hover {
   width: 45vw;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+.project-text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
 
 .about-me-text {
@@ -154,7 +175,8 @@ nav>#box>#entries>ol>li>a:hover {
 }
 
 .welcome-page>p,
-.about-me-text>p {
+.about-me-text>p,
+.project-text>p {
   color: var(--font-color);
   opacity: 0.8;
   margin-top: 1rem;
@@ -290,9 +312,9 @@ nav {
 @media only screen and (max-width: 1100px) {
 
   .welcome-page,
-  .about-me-text {
+  .about-me-text,
+  .project-text {
     width: 80vw;
-
   }
 
   .menu-list>ol>li>a>span {
@@ -310,13 +332,21 @@ nav {
   #open-nav {
     display: flex;
   }
+  .project{
+    min-height: 40vh;
+    min-width: 70vw;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
 
 @media only screen and (max-width: 500px) {
 
-  .welcome-page,
-  .about-me-text {
-    width: 80vw;
+  .project{
+    min-height: 60vh;
+    min-width: 80vw;
   }
 
   img {

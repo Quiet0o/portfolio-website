@@ -24,8 +24,8 @@ const HeroPage = () => {
         <span></span>
         <span></span>
       </div>
-      <div className="about-page">
-        <div className="about-me-text" id="about">
+      <div className="about-page" id="about">
+        <div className="about-me-text">
           <h2>
             <span>0.1</span> I'm web developer <hr />
           </h2>
