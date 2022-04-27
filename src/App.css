@@ -10,7 +10,10 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
 
+}
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 0px;
@@ -21,7 +24,7 @@ body {
 }
 
 /* menu */
-.main-menu {
+.main-menu-close,.main-menu {
   position: fixed;
   height: 10vh;
   z-index: 999;
@@ -31,7 +34,10 @@ body {
   justify-content: space-around;
 
 }
+.main-menu-close{
+  backdrop-filter: blur(0px);
 
+}
 .menu-logo>a>svg {
   color: white;
   width: 50px;
@@ -78,6 +84,7 @@ nav>#box>#entries>ol>li{
 font-size: 2rem;
 margin: 3rem;
 }
+
 span {
   color: var(--link-color);
 }
@@ -97,20 +104,11 @@ nav>#box>#entries>ol>li>a:hover {
 }
 
 /* https://i.postimg.cc/SxVJJxz0/i92oj95571698.jpg */
-a {
-  text-decoration: none;
-  color: #232323;
-
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: tomato;
-}
 
 /* main page */
 .hero-page,
-.about-page {
+.about-page,
+.projects{
   width: 100vw;
   height: 92vh;
   display: flex;
@@ -127,7 +125,9 @@ a:hover {
   flex-direction: row;
   align-items: center;
 }
-
+.projects{
+  height: 100vh;
+}
 .welcome-page,
 .about-me-text {
   display: flex;
@@ -310,7 +310,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
   .welcome-page,
   .about-me-text {

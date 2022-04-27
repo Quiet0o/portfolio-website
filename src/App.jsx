@@ -6,11 +6,9 @@ import Projects from "./components/Projects/Projects";
 function App() {
   return (
     <div className="App">
-      {/* <Menu/> */}
       <Menu />
       <HeroPage />
       <Projects />
-      {/* <HeroPage/> */}
     </div>
   );
 }
