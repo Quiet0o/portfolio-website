@@ -34,6 +34,7 @@ body {
   backdrop-filter: blur(10px);
   display: flex;
   top: 0;
+  width: 100vw;
   justify-content: space-around;
 
 }
@@ -44,7 +45,7 @@ body {
 }
 
 .menu-logo>a>svg {
-  color: var(--font-color);
+  fill: var(--font-color);
   width: 50px;
 }
 

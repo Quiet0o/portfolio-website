@@ -1,15 +1,16 @@
 import "./App.css";
-import HeroPage from "./components/HeroPage/HeroPage";
-import Menu from "./components/Menu/Menu";
-import Projects from "./components/Projects/Projects";
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainPage from "./components/MainPage/MainPage";
+import ErrorPage from "./components/Error/ErrorPage";
 function App() {
   return (
-    <div className="App">
-      <Menu />
-      <HeroPage />
-      <Projects />
-    </div>
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
