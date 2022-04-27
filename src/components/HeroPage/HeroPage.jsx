@@ -4,7 +4,7 @@ const HeroPage = () => {
   return (
     <>
       <div className="hero-page" id="home">
-        <div className="welcome-page" >
+        <div className="welcome-page">
           <span>Welcome my name is</span>
 
           <h1>Mikołaj Kłosowski</h1>
@@ -24,7 +24,7 @@ const HeroPage = () => {
         <span></span>
         <span></span>
       </div>
-      <div className="about-page"id="about" >
+      <div className="about-page" id="about">
         <div className="about-me-text">
           <h2>
             <span>0.1</span> I'm web developer <hr />

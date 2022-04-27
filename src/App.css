@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Roboto Mono', monospace;
+
   /* css variables */
   --main-bg-color: rgb(15, 15, 15);
   --link-color: rgb(144, 247, 144);
@@ -10,10 +11,11 @@
 
 }
 
+
 html {
   scroll-behavior: smooth;
-
 }
+
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 0px;
@@ -24,7 +26,8 @@ body {
 }
 
 /* menu */
-.main-menu-close,.main-menu {
+.main-menu,
+.main-menu-mobile {
   position: fixed;
   height: 10vh;
   z-index: 999;
@@ -34,12 +37,14 @@ body {
   justify-content: space-around;
 
 }
-.main-menu-close{
+
+.main-menu-mobile {
   backdrop-filter: blur(0px);
 
 }
+
 .menu-logo>a>svg {
-  color: white;
+  color: var(--font-color);
   width: 50px;
 }
 
@@ -80,9 +85,10 @@ nav>#box>#entries>ol {
   margin: 1rem;
   font-size: 1.2rem;
 }
-nav>#box>#entries>ol>li{
-font-size: 2rem;
-margin: 3rem;
+
+nav>#box>#entries>ol>li {
+  font-size: 2rem;
+  margin: 3rem;
 }
 
 span {
@@ -108,9 +114,10 @@ nav>#box>#entries>ol>li>a:hover {
 /* main page */
 .hero-page,
 .about-page,
-.projects{
+.project-page,
+.projects-conteiner {
   width: 100vw;
-  height: 92vh;
+  min-height: 100vh;
   display: flex;
   color: var(--font-color);
   justify-content: center;
@@ -120,20 +127,37 @@ nav>#box>#entries>ol>li>a:hover {
   background: var(--main-bg-color);
 }
 
-.about-page {
-  height: 100vh;
+.about-page,.projects-conteiner {
   flex-direction: row;
   align-items: center;
 }
-.projects{
-  height: 100vh;
+
+.project-page {
+  min-height: 50vh;
 }
+.project {
+  min-height: 20vw;
+  min-width: 20vw;
+  border: 1px solid;
+  border-radius: 20px;
+  margin: 2em;
+}
+
 .welcome-page,
 .about-me-text {
   display: flex;
   width: 45vw;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+.project-text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
 
 .about-me-text {
@@ -151,7 +175,8 @@ nav>#box>#entries>ol>li>a:hover {
 }
 
 .welcome-page>p,
-.about-me-text>p {
+.about-me-text>p,
+.project-text>p {
   color: var(--font-color);
   opacity: 0.8;
   margin-top: 1rem;
@@ -208,6 +233,7 @@ nav>#box>#entries>ol>li>a:hover {
   height: 3px;
   width: 40px;
   transition: 250ms;
+  border-radius: 7px;
   background-color: var(--font-color);
 }
 
@@ -217,7 +243,6 @@ nav>#box>#entries>ol>li>a:hover {
   position: absolute;
   background-color: var(--font-color);
   height: 3px;
-  ;
   width: 40px;
   border-radius: 7px;
   transition: 300ms;
@@ -257,10 +282,9 @@ nav {
   display: none;
   justify-content: center;
   align-items: center;
-  /* background:red; */
   backdrop-filter: blur(10px);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 998;
   animation: nav-blur 150ms steps(50) forwards;
 }
@@ -288,9 +312,9 @@ nav {
 @media only screen and (max-width: 1100px) {
 
   .welcome-page,
-  .about-me-text {
+  .about-me-text,
+  .project-text {
     width: 80vw;
-
   }
 
   .menu-list>ol>li>a>span {
@@ -308,13 +332,21 @@ nav {
   #open-nav {
     display: flex;
   }
+  .project{
+    min-height: 40vh;
+    min-width: 70vw;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 
-  .welcome-page,
-  .about-me-text {
-    width: 80vw;
+  .project{
+    min-height: 60vh;
+    min-width: 80vw;
   }
 
   img {
