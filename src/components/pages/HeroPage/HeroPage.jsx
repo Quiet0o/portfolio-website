@@ -1,6 +1,19 @@
 import React from "react";
+import { init } from "ityped";
+import { useEffect, useRef } from "react";
 
 const HeroPage = () => {
+  const textRef = useRef();
+
+
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      backDelay: 1500,
+      backSpeed:60,
+      strings: ["Developer", "Designer", "Content Creator"],
+    });
+  }, []);
   return (
     <>
       <div className="hero-page" id="home">
@@ -9,7 +22,7 @@ const HeroPage = () => {
 
           <h1>Mikołaj Kłosowski</h1>
           <h2>
-            <span>I'm web developer</span>
+           <span>I'm</span> <span ref={textRef}></span>
           </h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in
