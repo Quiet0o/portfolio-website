@@ -11,7 +11,7 @@ const HeroPage = () => {
       showCursor: true,
       backDelay: 1500,
       backSpeed:60,
-      strings: ["Developer", "Designer", "Content Creator"],
+      strings: ["Developer", "Designer", "Content Creator","UI/UX designer"],
     });
   }, []);
   return (
@@ -51,7 +51,7 @@ const HeroPage = () => {
           </p>
         </div>
         <div className="about-me-img">
-          <img src="https://agency.fenze.dev/images/mikolaj.png" alt="face" />
+          <img src="src\images\mikolaj.png" alt="face" />
         </div>
       </div>
     </>

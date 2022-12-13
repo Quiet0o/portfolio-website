@@ -113,10 +113,11 @@ nav>#box>#entries>ol>li>a:hover {
 /* https://i.postimg.cc/SxVJJxz0/i92oj95571698.jpg */
 
 /* main page */
+
 .hero-page,
 .about-page,
 .project-page,
-.projects-conteiner {
+.projects-conteiner,.error-page {
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -145,7 +146,8 @@ nav>#box>#entries>ol>li>a:hover {
 }
 
 .welcome-page,
-.about-me-text {
+.about-me-text
+{
   display: flex;
   width: 45vw;
   flex-wrap: wrap;

@@ -18,7 +18,7 @@ const Menu = () => {
     <>
     <div className={isActive ? 'main-menu-mobile': "main-menu"}>
       <div className="menu-logo">
-        <a href="https://agency.fenze.dev">
+        <a href="/">
           <svg
             viewBox="0 0 95 88"
             xmlns="http://www.w3.org/2000/svg"
