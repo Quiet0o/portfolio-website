@@ -52,7 +52,7 @@ const HeroPage = () => {
           </p>
         </div>
         <div className="about-me-img">
-          <img src="src\components\images\mikolaj.png" alt="face" />
+          <img src={imgUrl} alt="face" />
         </div>
       </div>
     </>
