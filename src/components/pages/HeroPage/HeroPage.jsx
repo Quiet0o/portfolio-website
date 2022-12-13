@@ -1,7 +1,7 @@
 import React from "react";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
-import imgUrl from "../../images/mikolaj.png"
+import imgUrl from "../../../../public/images/mikolaj.png"
 const HeroPage = () => {
   const textRef = useRef();
 
@@ -43,6 +43,7 @@ const HeroPage = () => {
             <span>0.1</span> I'm web developer <hr />
           </h2>
           <p>
+            test
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
             repellat vitae sit. Animi, odit praesentium libero amet quae alias
             enim consequuntur officia sed atque ex soluta vitae maiores! Labore,
