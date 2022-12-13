@@ -1,7 +1,7 @@
 import React from "react";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
-
+import imgUrl from "../../images/mikolaj.png"
 const HeroPage = () => {
   const textRef = useRef();
 
@@ -51,7 +51,7 @@ const HeroPage = () => {
           </p>
         </div>
         <div className="about-me-img">
-          <img src="src\images\mikolaj.png" alt="face" />
+          <img src="src\components\images\mikolaj.png" alt="face" />
         </div>
       </div>
     </>
