@@ -1,6 +1,6 @@
 import React from "react";
 import {useEffect, useState,useMemo} from 'react';
-
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Projects = () => {
 
@@ -23,21 +23,21 @@ const Projects = () => {
     <div className="project-page" id ="projects">
       <div className="project-text">
         <h2>
-          <span>0.2</span> My recent projects<hr />
+          <span>0.2</span> My projects <hr />
         </h2>
 
       </div>
       <div className="projects-conteiner">
-        <div className="project">
-          <img src="https://via.placeholder.com/200" alt="test" srcSet="" />
-        </div>
-        <div className="project">
-          <img src="https://via.placeholder.com/200" alt="test" srcSet="" />
-        </div>
-        <div className="project">
-          <img src="https://via.placeholder.com/200" alt="test" srcSet="" />
-        </div>
+        {data.map((rep)=>{
 
+          return (
+            <div className="project">
+              <center><h3>{rep.name}</h3></center>
+              <center><a href={rep.html_url}> </a></center>
+
+            </div>
+          )
+        })}
       </div>
     </div>
   );
