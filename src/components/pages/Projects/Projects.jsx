@@ -29,13 +29,13 @@ const Projects = () => {
       </div>
       <div className="projects-conteiner">
         <div className="project">
-          <img src="https://via.placeholder.com/200" alt="" srcSet="" />
+          <img src="https://via.placeholder.com/200" alt="test" srcSet="" />
         </div>
         <div className="project">
-          <img src="https://via.placeholder.com/200" alt="" srcSet="" />
+          <img src="https://via.placeholder.com/200" alt="test" srcSet="" />
         </div>
         <div className="project">
-          <img src="https://via.placeholder.com/200" alt="" srcSet="" />
+          <img src="https://via.placeholder.com/200" alt="test" srcSet="" />
         </div>
 
       </div>
