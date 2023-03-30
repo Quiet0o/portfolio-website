@@ -294,6 +294,7 @@ nav {
 
 .nav-open {
   display: flex;
+  background: #0f0f0fcf
 }
 
 @keyframes animate {
