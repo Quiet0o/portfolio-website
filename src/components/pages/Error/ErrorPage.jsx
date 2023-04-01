@@ -5,7 +5,7 @@ const ErrorPage = () => {
     <>
       <div className="hero-page" >
         <div className="error-page">
-          <h1><span>Error 404.</span></h1>
+          <h1><span>Error 404</span></h1>
           <h3><span>page not found</span></h3>
         </div>
       </div>
@@ -14,3 +14,4 @@ const ErrorPage = () => {
 };
 
 export default ErrorPage;
+nom
