@@ -14,4 +14,3 @@ const ErrorPage = () => {
 };
 
 export default ErrorPage;
-nom
