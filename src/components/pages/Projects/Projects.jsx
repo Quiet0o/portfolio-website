@@ -28,13 +28,20 @@ const Projects = () => {
 
       </div>
       <div className="projects-conteiner">
-        {data.map((rep)=>{
+        {data.map((rep,dep)=>{
 
           return (
             <div className="project">
-              <center><h3>{rep.name}</h3></center>
-              <center><a href={rep.html_url}> </a></center>
 
+              <center>
+                <h3>
+                  <span>0.{dep+1}</span> {rep.name}
+                </h3>
+              </center>
+
+              <p> language: {rep.language}</p>
+              <p> desc: {rep.language}</p>
+              <a href={rep.html_url}> Tutaj ma byc emoji githuba </a>
             </div>
           )
         })}

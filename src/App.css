@@ -131,11 +131,14 @@ nav>#box>#entries>ol>li>a:hover {
   background: var(--main-bg-color);
 }
 
-.about-page,.projects-conteiner {
+.about-page{
   flex-direction: row;
   align-items: center;
 }
-
+.projects-conteiner{
+  display: grid;
+  grid-template-columns: auto auto auto
+}
 .project-page {
   min-height: 50vh;
 }
