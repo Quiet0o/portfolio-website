@@ -1,7 +1,7 @@
 import React from "react";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
-import imgUrl from "../../../../public/images/mikolaj.png";
+import imgUrl from "./mikolaj.png";
 const HeroPage = () => {
   const textRef = useRef();
 
