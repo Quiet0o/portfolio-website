@@ -137,7 +137,8 @@ nav>#box>#entries>ol>li>a:hover {
 }
 .projects-conteiner{
   display: grid;
-  grid-template-columns: auto auto auto
+  max-width: min-content;
+  grid-template-columns: auto auto auto;
 }
 .project-page {
   min-height: 50vh;
@@ -345,20 +346,23 @@ nav {
   .project{
     min-height: 40vh;
     min-width: 70vw;
-    display: flex;
+    /* display: flex;
     align-content: center;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: flex-start; */
+  }
+  .projects-conteiner{
+    grid-template-columns:auto;
   }
 }
 
 @media only screen and (max-width: 500px) {
 
+
   .project{
     min-height: 60vh;
     min-width: 80vw;
   }
-
   img {
     width: auto;
   }
