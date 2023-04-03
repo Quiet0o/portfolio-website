@@ -3,7 +3,7 @@ import {useEffect, useState,useMemo} from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Projects = () => {
-
+  const desc = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis nibh vitae nunc suscipit dictum. Integer gravida ex at semper pellentesque. Nullam eu sodales tortor, sed viverra magna. In finibus quam non neque iaculis, quis ultrices nisi gravida. Quisque eget tellus ipsum. Nulla facilisi. Aliquam scelerisque magna est, eget ullamcorper est congue in.","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis nibh vitae nunc suscipit dictum. Integer gravida ex at semper pellentesque. Nullam eu sodales tortor, sed viverra magna. In finibus quam non neque iaculis, quis ultrices nisi gravida. Quisque eget tellus ipsum. Nulla facilisi. Aliquam scelerisque magna est, eget ullamcorper est congue in.","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis nibh vitae nunc suscipit dictum. Integer gravida ex at semper pellentesque. Nullam eu sodales tortor, sed viverra magna. In finibus quam non neque iaculis, quis ultrices nisi gravida. Quisque eget tellus ipsum. Nulla facilisi. Aliquam scelerisque magna est, eget ullamcorper est congue in.","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis nibh vitae nunc suscipit dictum. Integer gravida ex at semper pellentesque. Nullam eu sodales tortor, sed viverra magna. In finibus quam non neque iaculis, quis ultrices nisi gravida. Quisque eget tellus ipsum. Nulla facilisi. Aliquam scelerisque magna est, eget ullamcorper est congue in.","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis nibh vitae nunc suscipit dictum. Integer gravida ex at semper pellentesque. Nullam eu sodales tortor, sed viverra magna. In finibus quam non neque iaculis, quis ultrices nisi gravida. Quisque eget tellus ipsum. Nulla facilisi. Aliquam scelerisque magna est, eget ullamcorper est congue in.","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis nibh vitae nunc suscipit dictum. Integer gravida ex at semper pellentesque. Nullam eu sodales tortor, sed viverra magna. In finibus quam non neque iaculis, quis ultrices nisi gravida. Quisque eget tellus ipsum. Nulla facilisi. Aliquam scelerisque magna est, eget ullamcorper est congue in.","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus venenatis nibh vitae nunc suscipit dictum. Integer gravida ex at semper pellentesque. Nullam eu sodales tortor, sed viverra magna. In finibus quam non neque iaculis, quis ultrices nisi gravida. Quisque eget tellus ipsum. Nulla facilisi. Aliquam scelerisque magna est, eget ullamcorper est congue in."]
   const [user, setUser] = useState('Quiet0o');
   const [data, setData] = useState([]);
 
@@ -40,7 +40,7 @@ const Projects = () => {
               </center>
 
               <p> language: {rep.language}</p>
-              <p> desc: {rep.language}</p>
+              <p> desc: {desc[dep]}</p>
               <a href={rep.html_url}> Tutaj ma byc emoji githuba </a>
             </div>
           )
