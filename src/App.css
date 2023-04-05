@@ -46,31 +46,13 @@ body {
 
 }
 
-.menu-logo>a>svg {
-  fill: var(--font-color);
-  width: 50px;
-}
 
-.menu-logo>a {
-  cursor: pointer;
-}
 
-.menu-list,
-.menu-logo {
-  width: 86vw;
+.menu-list{
+  width: 98vw;
   display: flex;
   height: auto;
   justify-content: flex-end;
-}
-
-.menu-logo {
-  width: 10vw;
-  margin-left: 2vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: center;
-  height: auto;
 }
 
 .menu-list>ol {

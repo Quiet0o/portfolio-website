@@ -17,10 +17,6 @@ const Menu = () => {
   return (
     <>
     <div className={isActive ? 'main-menu-mobile': "main-menu"}>
-      <div className="menu-logo">
-
-      </div>
-
       <div className="menu-list">
         <div id="open-nav" onClick={toggleClass}>
           <div id="burger" className={isActive ? 'burger-close': null}></div>
