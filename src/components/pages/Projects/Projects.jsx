@@ -28,10 +28,12 @@ const Projects = () => {
 
       </div>
       <div className="projects-conteiner">
+        <ul className="project-grid">
         {data.map((rep,dep)=>{
 
           return (
-            <div className="project">
+            <li>
+              <div className="project-inner">
 
               <center>
                 <h3>
@@ -42,9 +44,11 @@ const Projects = () => {
               <p> language: {rep.language}</p>
               <p> desc: {desc[dep]}</p>
               <a href={rep.html_url}> Tutaj ma byc emoji githuba </a>
-            </div>
+              </div>
+            </li>
           )
         })}
+        </ul>
       </div>
     </div>
   );
