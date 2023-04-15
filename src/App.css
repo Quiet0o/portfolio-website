@@ -361,11 +361,11 @@ nav {
 
   .projects-conteiner{
     margin: 0 auto;
-    max-width: 90vw;
+    max-width: fit-content;
   }
   .projects-conteiner .project-grid {
     width: 80vw;
-    margin: 4em;
+    margin-top: 4em;
   }
   /* .project{
     min-height: 60vh;
