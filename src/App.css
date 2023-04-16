@@ -118,6 +118,7 @@ nav>#box>#entries>ol>li>a:hover {
   align-items: center;
 }
 .projects-conteiner .project-grid{
+  margin-top: 4em;
   width: 100%;
   list-style: none;
   padding: 0px;
@@ -134,7 +135,7 @@ nav>#box>#entries>ol>li>a:hover {
 }
 .projects-conteiner{
   margin: 0px auto;
-  max-width: 55vw;
+  max-width: 60vw;
   display: flex;
     flex-direction: column;
     -webkit-box-align: center;
@@ -332,7 +333,9 @@ nav {
   .project-text {
     width: 80vw;
   }
-
+  .projects-conteiner{
+    max-width: 80vw;
+  }
   .menu-list>ol>li>a>span {
     display: none;
   }
@@ -351,9 +354,7 @@ nav {
   .project,.projects-conteiner{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
-  .projects-conteiner{
-    /* grid-template-columns:auto; */
-  }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -371,7 +372,6 @@ nav {
   }
   .projects-conteiner .project-grid {
     width: 80vw;
-    margin-top: 4em;
   }
   /* .project{
     min-height: 60vh;
@@ -408,4 +408,14 @@ nav {
 
 }
 
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {
+  .welcome-page>h1 {
+    font-size: 3rem;
+  }
+  .projects-conteiner .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+  .projects-conteiner .project-grid span{
+    font-size:16px;
+  }
+}
