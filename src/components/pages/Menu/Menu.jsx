@@ -61,7 +61,7 @@ const Menu = () => {
              </a>
            </li>
            <li>
-             <a href="" onClick={toggleClass}>
+             <a href="#projects" onClick={toggleClass}>
                <span>03.</span> Projects
              </a>
            </li>

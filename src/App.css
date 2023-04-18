@@ -128,7 +128,7 @@ nav>#box>#entries>ol>li>a:hover {
   position: relative;
 
 }
-.project-page {
+.project-page,.about-page {
   min-width: 60vw;
   padding: 10vh 0 0 0;
   margin: 0px auto;
@@ -255,7 +255,7 @@ nav>#box>#entries>ol>li>a:hover {
 #burger:after {
   content: '';
   position: absolute;
-  background-color: var(--font-color);
+  background-color: #fff !important;
   height: 3px;
   width: 40px;
   border-radius: 7px;
