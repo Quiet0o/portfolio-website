@@ -26,7 +26,7 @@ const Projects = () => {
     <div className="project-page" id ="projects">
       <div className="project-text">
         <h2>
-          <span>0.2</span> My projects <hr />
+          <span>0.3</span> My projects <hr />
         </h2>
 
       </div>

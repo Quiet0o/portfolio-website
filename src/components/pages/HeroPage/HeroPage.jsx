@@ -17,7 +17,7 @@ const HeroPage = () => {
     <>
       <div className="hero-page" id="home">
         <div className="welcome-page">
-          <span>Welcome my name is</span>
+        <span>0.1 Welcome my name is</span>
 
           <h1>Mikołaj Kłosowski</h1>
           <h2>
@@ -39,7 +39,7 @@ const HeroPage = () => {
       <div className="about-page" id="about">
         <div className="about-me-text">
           <h2>
-            <span>0.1</span> I'm web developer <hr />
+            <span>0.2</span> I'm web developer <hr />
           </h2>
           <p>
             Hello! My name is Brittany and I enjoy creating things that live on
