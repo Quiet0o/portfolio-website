@@ -8,8 +8,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "firebase": "^9.15.0",
-    "firebase-tools": "^11.25.2",
+    "firebase-tools": "^11.27.0",
     "font-awesome": "^4.7.0",
     "ityped": "^1.0.3",
     "react": "^17.0.2",

@@ -1,6 +1,9 @@
 import React from "react";
 import {useEffect, useState} from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Projects = () => {
   const desc = ["Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",]
@@ -41,9 +44,9 @@ const Projects = () => {
                 </h3>
               </center>
 
-              <p> language: {rep.language}</p>
-              <p> desc: {desc[dep]}</p>
-              <a href={rep.html_url}> Tutaj ma byc emoji githuba </a>
+              <p id="project-desc"> {desc[dep]}</p>
+              <a href={rep.html_url} id="project-icon"> <FontAwesomeIcon icon={faGithub} style={{color: "#fff",}} /></a>
+              <p id="project-language"> {rep.language}</p>
               </div>
             </li>
           )
