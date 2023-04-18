@@ -339,6 +339,9 @@ p#project-language {
   bottom: 20px;
   right: 20px;
 }
+p#project-desc {
+  margin: 1em 0 0 0;
+}
 @media only screen and (max-width: 1100px) {
 
   .welcome-page,
