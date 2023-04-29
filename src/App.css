@@ -435,11 +435,8 @@ form{
 }
 
 @media only screen and (max-width: 500px) {
-  h2{
-
-  }
   .contact-form-page{
-    padding: 10vh 0 0 0;
+    padding: 5vh 0 0 0;
   }
   .about-page{
     margin-top:6em;
