@@ -23,23 +23,18 @@ const Menu = () => {
         </div>
         <ol>
           <li>
-            <a href="#home">
-              <span>01.</span> Home
-            </a>
-          </li>
-          <li>
             <a href="#about">
-              <span>02.</span> About
+              <span>01.</span> About
             </a>
           </li>
           <li>
             <a href="#projects">
-              <span>03.</span> Projects
+              <span>02.</span> Projects
             </a>
           </li>
           <li>
-            <a href="">
-              <span>04.</span> Contact
+            <a href="#contact">
+              <span>03.</span> Contact
             </a>
           </li>
         </ol>
@@ -51,23 +46,18 @@ const Menu = () => {
        <div id='entries'>
        <ol>
            <li>
-             <a href="#home" onClick={toggleClass}>
-               <span>01.</span> Home
-             </a>
-           </li>
-           <li>
              <a href="#about" onClick={toggleClass}>
-               <span>02.</span> About
+               <span>01.</span> About
              </a>
            </li>
            <li>
              <a href="#projects" onClick={toggleClass}>
-               <span>03.</span> Projects
+               <span>02.</span> Projects
              </a>
            </li>
            <li>
-             <a href="" onClick={toggleClass}>
-               <span>04.</span> Contact
+             <a href="#contact" onClick={toggleClass}>
+               <span>03.</span> Contact
              </a>
            </li>
          </ol>

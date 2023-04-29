@@ -20,7 +20,10 @@ html {
 ::-webkit-scrollbar {
   width: 0px;
 }
-
+::placeholder {
+  color: #888888;
+  padding: 1em;
+}
 body {
   background-color: var(--main-bg-color);
 }
@@ -101,7 +104,7 @@ nav>#box>#entries>ol>li>a:hover {
 .hero-page,
 .about-page,
 .project-page,
-.projects-conteiner,.error-page {
+.projects-conteiner,.error-page,.contact-form-page {
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -135,7 +138,7 @@ nav>#box>#entries>ol>li>a:hover {
 }
 .projects-conteiner{
   margin: 0px auto;
-  max-width: 60vw;
+  max-width: 56.9vw;
   display: flex;
     flex-direction: column;
     -webkit-box-align: center;
@@ -157,7 +160,8 @@ nav>#box>#entries>ol>li>a:hover {
 }
 
 .welcome-page,
-.about-me-text
+.about-me-text,
+.title
 {
   display: flex;
   width: 45vw;
@@ -331,6 +335,7 @@ a#project-icon {
   right: 20px;
   top: 20px;
 }
+
 p#project-language {
   color: #858585;
   margin-top: 0em;
@@ -339,9 +344,62 @@ p#project-language {
   bottom: 20px;
   right: 20px;
 }
+
 p#project-desc {
   margin: 1em 0 0 0;
 }
+.title p{
+  margin: 2em 0 0 0;
+}
+form{
+  width: 45vw;
+  margin: 2em 0 0 0;
+}
+.form-group {
+  width: 100%;
+  margin: 1em 0 1em 0;
+}
+.contact-form input {
+  border-radius: 0;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+  padding:  0 0 0 1rem;
+  height: 5em;
+  /* font-size: 12px; */
+  color: var(--font-color);
+  border: none;
+  background-color: var(--project-color);
+}
+.contact-form textarea {
+  border-radius: 0;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+  resize: none;
+  height: 10em;
+  font-size: 12px;
+  color: var(--font-color);
+  border: none;
+  background-color: var(--project-color);
+}
+.contact-form .submit-button {
+  background: #2e2e2e;
+  color:var(--link-color);
+  cursor:pointer;
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contact-form .submit-button:hover{
+  transition: ease-in 300ms;
+  color: #2e2e2e;
+  background:var(--link-color);
+}
+
+
 @media only screen and (max-width: 1100px) {
 
   .welcome-page,

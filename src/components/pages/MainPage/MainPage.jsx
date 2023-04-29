@@ -2,6 +2,7 @@ import React from 'react'
 import HeroPage from '../HeroPage/HeroPage';
 import Menu from '../Menu/Menu';
 import Projects from '../Projects/Projects';
+import EmailForm from '../Contact/EmailForm';
 
 
 const MainPage = () => {
@@ -10,6 +11,7 @@ const MainPage = () => {
             <Menu />
             <HeroPage />
             <Projects />
+            <EmailForm/>
       </div>
     )
 }

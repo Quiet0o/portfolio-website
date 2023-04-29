@@ -26,7 +26,7 @@ const Projects = () => {
     <div className="project-page" id ="projects">
       <div className="project-text">
         <h2>
-          <span>0.3</span> My projects <hr />
+          <span>0.2</span> My projects <hr />
         </h2>
 
       </div>
@@ -44,7 +44,7 @@ const Projects = () => {
                 </h3>
               </center>
 
-              <p id="project-desc"> {desc[dep]}</p>
+              <p id="project-desc"> {desc[1]}</p>
               <a href={rep.html_url} id="project-icon"> <FontAwesomeIcon icon={faGithub} style={{color: "#fff",}} /></a>
               <p id="project-language"> {rep.language}</p>
               </div>

@@ -10,14 +10,14 @@ const HeroPage = () => {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Developer", "Designer", "Content Creator", "UI/UX designer"],
+      strings: ["Developer", "Designer", "Frontend dev","Backend dev", "UI/UX designer"],
     });
   }, []);
   return (
     <>
       <div className="hero-page" id="home">
         <div className="welcome-page">
-        <span>0.1 Welcome my name is</span>
+        <span>Welcome my name is</span>
 
           <h1>Mikołaj Kłosowski</h1>
           <h2>
@@ -39,7 +39,7 @@ const HeroPage = () => {
       <div className="about-page" id="about">
         <div className="about-me-text">
           <h2>
-            <span>0.2</span> I'm web developer <hr />
+            <span>0.1</span> I'm web developer <hr />
           </h2>
           <p>
             Hello! My name is Brittany and I enjoy creating things that live on
