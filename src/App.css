@@ -378,7 +378,6 @@ form{
   width: fill-available;
   resize: none;
   height: 10em;
-  font-size: 12px;
   color: var(--font-color);
   border: none;
   background-color: var(--project-color);
@@ -404,8 +403,12 @@ form{
 
   .welcome-page,
   .about-me-text,
-  .project-text {
+  .project-text,.title,form {
     width: 80vw;
+  }
+
+  .contact-form .submit-button{
+    width: 100%;
   }
   .projects-conteiner{
     max-width: 80vw;
@@ -432,7 +435,12 @@ form{
 }
 
 @media only screen and (max-width: 500px) {
+  h2{
 
+  }
+  .contact-form-page{
+    padding: 10vh 0 0 0;
+  }
   .about-page{
     margin-top:6em;
   }
@@ -463,7 +471,7 @@ form{
     font-size: 3.5rem;
   }
 
-  .welcome-page>h2 {
+  .welcome-page>h2, .about-me-text>h2{
     font-size: 1.5rem;
   }
 
@@ -479,13 +487,16 @@ form{
   .menu-logo {
     margin-left: 4vw;
   }
-
+  .contact-form-page{
+    margin: 3em 0 0 0 ;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .welcome-page>h1 {
     font-size: 3rem;
   }
+
   .projects-conteiner .project-grid {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }

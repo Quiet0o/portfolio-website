@@ -5,6 +5,7 @@ const EmailForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -70,6 +71,7 @@ const EmailForm = () => {
             class="form-control"
             name="subject"
             id="subject"
+            onChange={(e) => setSubject(e.target.value)}
           />
         </div>
         <div className="form-group">
