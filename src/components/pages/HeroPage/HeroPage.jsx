@@ -10,14 +10,20 @@ const HeroPage = () => {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Developer", "Designer", "Frontend dev","Backend dev", "UI/UX designer"],
+      strings: [
+        "Developer",
+        "Designer",
+        "Frontend dev",
+        "Backend dev",
+        "UI/UX designer",
+      ],
     });
   }, []);
   return (
     <>
       <div className="hero-page" id="home">
         <div className="welcome-page">
-        <span>Welcome my name is</span>
+          <span>Welcome my name is</span>
 
           <h1>Mikołaj Kłosowski</h1>
           <h2>
@@ -60,7 +66,6 @@ const HeroPage = () => {
           <img src={imgUrl} alt="face" />
         </div>
       </div>
-
     </>
   );
 };

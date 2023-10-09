@@ -359,7 +359,7 @@ form{
   width: 100%;
   margin: 1em 0 1em 0;
 }
-.contact-form input {
+.form-group input ,.contact-form .submit-button {
   border-radius: 0;
   width: -moz-available;          /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
@@ -376,6 +376,7 @@ form{
   width: -moz-available;          /* WebKit-based browsers will ignore this. */
   width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
   width: fill-available;
+  padding: 1rem 1rem 0 1rem;
   resize: none;
   height: 10em;
   color: var(--font-color);
@@ -383,13 +384,23 @@ form{
   background-color: var(--project-color);
 }
 .contact-form .submit-button {
-  background: #2e2e2e;
+  padding:  0;
+  background: #2e2e2e !important;
   color:var(--link-color);
   cursor:pointer;
   width: 50%;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+
+  -webkit-text-fill-color: var(--font-color);
+  -webkit-box-shadow:  #2e2e2e inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .contact-form .submit-button:hover{

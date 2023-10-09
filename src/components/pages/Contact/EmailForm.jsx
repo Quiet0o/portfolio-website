@@ -9,20 +9,7 @@ const EmailForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    // const templateParams = {
-    //   from_name: name,
-    //   from_email: email,
-    //   message: message
-    // };
-
-    // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
-    //   .then((response) => {
-    //     console.log('SUCCESS!', response.status, response.text);
-    //   }, (error) => {
-    //     console.log('FAILED...', error);
-    //   });
-
+    setSubject("");
     setName("");
     setEmail("");
     setMessage("");
@@ -32,7 +19,7 @@ const EmailForm = () => {
     <div className="contact-form-page" id="contact">
       <div class="title">
         <h2>
-          <span>0.3</span> Contact <hr/>
+          <span>0.3</span> Contact <hr />
         </h2>
         <p>
           You can also reach us with your query like which WordPress themes are
@@ -71,6 +58,7 @@ const EmailForm = () => {
             class="form-control"
             name="subject"
             id="subject"
+            value={subject}
             onChange={(e) => setSubject(e.target.value)}
           />
         </div>
