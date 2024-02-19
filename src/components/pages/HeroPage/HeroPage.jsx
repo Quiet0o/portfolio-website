@@ -30,10 +30,7 @@ const HeroPage = () => {
             <span>I'm</span> <span ref={textRef}></span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in
-            placeat enim alias illo consectetur, deserunt est debitis fugit?
-            Ipsum dolorum non quis doloribus aspernatur optio id blanditiis,
-            maxime eos!
+            Junior Backend Developer with a passion for building robust web applications. Proficient in server-side programming languages and frameworks, database management, and API integration. Dedicated to writing clean, efficient code and eager to contribute to dynamic development teams. Seeking opportunities to further develop skills and make impactful contributions in the realm of backend development.
           </p>
         </div>
       </div>
@@ -48,19 +45,24 @@ const HeroPage = () => {
             <span>0.1</span> I'm web developer <hr />
           </h2>
           <p>
-            Hello! My name is Brittany and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS! Fast-forward to today, and I’ve had the privilege of working at
-            an advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences at
-            Upstatement for a variety of clients. I also recently launched a
-            course that covers everything you need to build a web app with the
-            Spotify API using Node & React. Here are a few technologies I’ve
+            Hello! My name is Mikołaj and I enjoy creating things that live on
+            the internet. My interest in web development started back in 2014
+            when I decided to try C++ tutorial! Fast-forward to today, and I’ve had the privilege of working at
+            e-commerce sites. My main focus these days is building
+            accessible, inclusive products and digital experiences.
+            Here are a few technologies I’ve
             been working with recently:
           </p>
+          <div className="technologies">
+            <ul className="technologies-gird">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>PHP</li>
+              <li>REACT</li>
+              <li>Symfony</li>
+              <li>Twig</li>
+            </ul>
+          </div>
         </div>
         <div className="about-me-img">
           <img src={imgUrl} alt="face" />

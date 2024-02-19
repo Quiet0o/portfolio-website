@@ -1,21 +1,16 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Projects = () => {
   const desc = [
-    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
-    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
-    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
-    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
-    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
-    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
-    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
+    "Basic python web scraper app , integreted with firebase noSQL database.",
+    "Portfolio website to showacase my journey in to web develepoment world",
+    "Simple e-commerce project created for school project, integreted with firebase",
+    "Basic application to plan what to do. Mainly created with Symfony framework",
   ];
-  const [user, setUser] = useState("Quiet0o");
+  const user = "Quiet0o";
   const [data, setData] = useState([]);
 
   const getUserData = async () => {
@@ -30,8 +25,8 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="project-page" id="projects">
-      <div className="project-text">
+    <div className="project-page" >
+      <div className="project-text" id="projects" >
         <h2>
           <span>0.2</span> My projects <hr />
         </h2>
@@ -44,11 +39,14 @@ const Projects = () => {
                 <div className="project-inner">
                   <center>
                     <h3>
-                      <span>0.{dep + 1}</span> {rep.name}
+                      <span>0.{dep + 1}</span>
+                      <a href={rep.html_url}>
+                        {rep.name}
+                      </a>
                     </h3>
                   </center>
 
-                  <p id="project-desc"> {desc[1]}</p>
+                  <p id="project-desc"> {desc[dep]}</p>
                   <a href={rep.html_url} id="project-icon">
                     {" "}
                     <FontAwesomeIcon

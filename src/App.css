@@ -1,16 +1,15 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 
   /* css variables */
   --main-bg-color: rgb(15, 15, 15);
   --link-color: rgb(144, 247, 144);
   --font-color: rgb(255, 255, 255);
   --arrow-color: #acacac;
-  --project-color:rgb(25, 25, 25);
+  --project-color: rgb(25, 25, 25);
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -40,41 +39,37 @@ body {
   top: 0;
   width: 100vw;
   justify-content: space-around;
-
 }
 
 .main-menu-mobile {
-   -webkit-backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
   backdrop-filter: blur(0px);
-
 }
 
-
-
-.menu-list{
+.menu-list {
   width: 98vw;
   display: flex;
   height: auto;
   justify-content: flex-end;
 }
 
-.menu-list>ol {
+.menu-list > ol {
   list-style: none;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-nav>#box>#entries>ol {
+nav > #box > #entries > ol {
   list-style: none;
 }
 
-.menu-list>ol>li {
+.menu-list > ol > li {
   margin: 1rem;
   font-size: 1.2rem;
 }
 
-nav>#box>#entries>ol>li {
+nav > #box > #entries > ol > li {
   font-size: 2rem;
   margin: 3rem;
 }
@@ -83,18 +78,16 @@ span {
   color: var(--link-color);
 }
 
-.menu-list>ol>li>a,
-nav>#box>#entries>ol>li>a {
+.menu-list > ol > li > a,
+nav > #box > #entries > ol > li > a {
   color: var(--font-color);
   text-decoration: none;
-
 }
 
-.menu-list>ol>li>a:hover,
-nav>#box>#entries>ol>li>a:hover {
+.menu-list > ol > li > a:hover,
+nav > #box > #entries > ol > li > a:hover {
   color: var(--link-color);
   transition: color 300ms linear;
-
 }
 
 /* https://i.postimg.cc/SxVJJxz0/i92oj95571698.jpg */
@@ -104,7 +97,9 @@ nav>#box>#entries>ol>li>a:hover {
 .hero-page,
 .about-page,
 .project-page,
-.projects-conteiner,.error-page,.contact-form-page {
+.projects-conteiner,
+.error-page,
+.contact-form-page {
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -116,11 +111,20 @@ nav>#box>#entries>ol>li>a:hover {
   background: var(--main-bg-color);
 }
 
-.about-page{
+.title{
+  display: flex;
+  width: 45vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-page {
   flex-direction: row;
   align-items: center;
 }
-.projects-conteiner .project-grid{
+
+.projects-conteiner .project-grid {
   margin-top: 4em;
   width: 100%;
   list-style: none;
@@ -129,47 +133,49 @@ nav>#box>#entries>ol>li>a:hover {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 15px;
   position: relative;
-
 }
-.project-page,.about-page {
+
+.project-page,
+.about-page {
   min-width: 60vw;
   padding: 10vh 0 0 0;
   margin: 0px auto;
 }
-.projects-conteiner{
+
+.projects-conteiner {
   margin: 0px auto;
   max-width: 56.9vw;
   display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
 }
+
 .project-inner {
   display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    padding: 3rem 2rem;
-    /* border-radius: var(--border-radius); */
-    background-color: var(--project-color);
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding: 3rem 2rem;
+  /* border-radius: var(--border-radius); */
+  background-color: var(--project-color);
 
-    overflow: auto;
+  overflow: auto;
 }
 
 .welcome-page,
 .about-me-text,
-.title
-{
+.title {
   display: flex;
   width: 45vw;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.project-text{
+.project-text {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -182,19 +188,19 @@ nav>#box>#entries>ol>li>a:hover {
   width: 35vw;
 }
 
-.welcome-page>h1 {
+.welcome-page > h1 {
   margin-top: 1rem;
   font-size: 5rem;
   color: var(--font-color);
 }
 
-.welcome-page>h2 {
+.welcome-page > h2 {
   font-size: 3rem;
 }
 
-.welcome-page>p,
-.about-me-text>p,
-.project-text>p {
+.welcome-page > p,
+.about-me-text > p,
+.project-text > p {
   color: var(--font-color);
   opacity: 0.8;
   margin-top: 1rem;
@@ -238,7 +244,7 @@ nav>#box>#entries>ol>li>a:hover {
   height: 100%;
   width: 80px;
   left: 0;
-  transition: .7s ease-out;
+  transition: 0.7s ease-out;
 }
 
 #open-nav:hover {
@@ -257,7 +263,7 @@ nav>#box>#entries>ol>li>a:hover {
 
 #burger:before,
 #burger:after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #fff !important;
   height: 3px;
@@ -300,7 +306,7 @@ nav {
   display: none;
   justify-content: center;
   align-items: center;
-   -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   width: 100%;
   height: 100%;
@@ -310,9 +316,8 @@ nav {
 
 .nav-open {
   display: flex;
-  background: #0f0f0fcf
+  background: #0f0f0fcf;
 }
-
 
 @keyframes animate {
   0% {
@@ -348,121 +353,124 @@ p#project-language {
 p#project-desc {
   margin: 1em 0 0 0;
 }
-.title p{
+
+.title p {
   margin: 2em 0 0 0;
+  width: 30vw;
 }
-form{
-  width: 45vw;
-  margin: 2em 0 0 0;
+
+.technologies {
+  padding: 2em 1em 0 1.2em;
 }
-.form-group {
-  width: 100%;
-  margin: 1em 0 1em 0;
+
+ul.technologies-gird {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
 }
-.form-group input ,.contact-form .submit-button {
-  border-radius: 0;
-  width: -moz-available;          /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-  width: fill-available;
-  padding:  0 0 0 1rem;
-  height: 5em;
-  /* font-size: 12px; */
-  color: var(--font-color);
+
+li::marker {
+  color: var(--link-color);
+}
+
+.btn {
+  color: white;
+  padding: .75rem 2.5rem;
   border: none;
-  background-color: var(--project-color);
-}
-.contact-form textarea {
-  border-radius: 0;
-  width: -moz-available;          /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-  width: fill-available;
-  padding: 1rem 1rem 0 1rem;
-  resize: none;
-  height: 10em;
-  color: var(--font-color);
-  border: none;
-  background-color: var(--project-color);
-}
-.contact-form .submit-button {
-  padding:  0;
-  background: #2e2e2e !important;
-  color:var(--link-color);
-  cursor:pointer;
-  width: 50%;
-  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
   font-weight: bold;
-  letter-spacing: 1px;
-}
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active{
-
-  -webkit-text-fill-color: var(--font-color);
-  -webkit-box-shadow:  #2e2e2e inset;
-  transition: background-color 5000s ease-in-out 0s;
+  font-size: 1.2rem;
+  margin-top: 1.5em;
 }
 
-.contact-form .submit-button:hover{
-  transition: ease-in 300ms;
-  color: #2e2e2e;
-  background:var(--link-color);
+.btn-intermediate {
+  background: linear-gradient(to right, var(--link-color),rgb(175,231,175));
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
+.btn-intermediate:hover {
+  transform: scale(1.1);
+}
 
+.project-inner a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
 @media only screen and (max-width: 1100px) {
-
   .welcome-page,
-  .about-me-text,
-  .project-text,.title,form {
+  .project-text,
+  .title{
     width: 80vw;
   }
 
-  .contact-form .submit-button{
-    width: 100%;
+  .about-me-text {
+    width: 40vw;
   }
-  .projects-conteiner{
+
+  .projects-conteiner {
     max-width: 80vw;
   }
-  .menu-list>ol>li>a>span {
+
+  .menu-list > ol > li > a > span {
     display: none;
   }
 
-  .welcome-page>h1 {
+  .welcome-page > h1 {
     font-size: 5rem;
   }
 
-  .menu-list>ol {
+  .menu-list > ol {
     display: none;
   }
 
   #open-nav {
     display: flex;
   }
-  .project,.projects-conteiner{
+
+  .project,
+  .projects-conteiner {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
+}
+
+@media only screen and (max-width:800px) {
+  
+  .about-me-text{
+    width: 80vw;
+  }
+
 
 }
 
 @media only screen and (max-width: 500px) {
-  .contact-form-page{
-    padding: 8vh 0 0 0;
+
+  .about-page {
+    margin-top: 6em;
   }
-  .about-page{
-    margin-top:6em;
-  }
+
   .about-me-img {
     width: max-content;
     height: max-content;
   }
-  .about-me-img  img{
+
+  .about-me-img img {
     width: 80vw;
-}
-  .projects-conteiner{
+  }
+
+  .projects-conteiner {
     margin: 0 auto;
     max-width: fit-content;
   }
+
   .projects-conteiner .project-grid {
     width: 80vw;
   }
@@ -471,15 +479,16 @@ input:-webkit-autofill:active{
     width: auto;
   }
 
-  .menu-list>ol>li {
+  .menu-list > ol > li {
     margin: 1rem;
   }
 
-  .welcome-page>h1 {
+  .welcome-page > h1 {
     font-size: 3.5rem;
   }
 
-  .welcome-page>h2, .about-me-text>h2{
+  .welcome-page > h2,
+  .about-me-text > h2 {
     font-size: 1.5rem;
   }
 
@@ -495,20 +504,20 @@ input:-webkit-autofill:active{
   .menu-logo {
     margin-left: 4vw;
   }
-  .contact-form-page{
-    margin: 3em 0 0 0 ;
+  .title p{
+    width: 45vw;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .welcome-page>h1 {
+  .welcome-page > h1 {
     font-size: 3rem;
   }
 
   .projects-conteiner .project-grid {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
-  .projects-conteiner .project-grid span{
-    font-size:16px;
+  .projects-conteiner .project-grid span {
+    font-size: 16px;
   }
 }
