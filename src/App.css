@@ -160,9 +160,7 @@ nav > #box > #entries > ol > li > a:hover {
   align-items: flex-start;
   position: relative;
   padding: 3rem 2rem;
-  /* border-radius: var(--border-radius); */
   background-color: var(--project-color);
-
   overflow: auto;
 }
 
@@ -405,6 +403,60 @@ li::marker {
   color: white;
   margin-left: 10px;
 }
+
+.contact-form-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.timeline-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  color: var(--font-color);
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  background: var(--main-bg-color);
+}
+
+.timeline {
+  border-left: 2px solid #ccc;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.timeline-item h3 {
+  font-size: 20px;
+  color: var(--link-color);
+  margin: 0;
+}
+
+.timeline-item p {
+  margin: 5px 0;
+  color: var(--font-color);
+  width: 45vw;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 9px;
+  height: 10px;
+  width: 10px;
+  margin: 0 0 0 -8px;
+  background-color: var(--link-color);
+  border-radius: 50%;
+}
+
+
 @media only screen and (max-width: 1100px) {
   .welcome-page,
   .project-text,
@@ -435,7 +487,17 @@ li::marker {
   #open-nav {
     display: flex;
   }
+  .timeline-container{
+    margin-top: 5em;
+    width: 90vw;
+  }
 
+  .timeline{
+    width: 80vw;
+  }
+  .timeline-item p {
+    width: 70vw;
+  }
   .project,
   .projects-conteiner {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -448,7 +510,17 @@ li::marker {
     width: 80vw;
   }
 
+  .timeline-container{
+    margin-top: 5em;
+    width: 90vw;
+  }
 
+  .timeline{
+    width: 80vw;
+  }
+  .timeline-item p {
+    width: 65vw;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -456,7 +528,7 @@ li::marker {
   .about-page {
     margin-top: 6em;
   }
-
+ 
   .about-me-img {
     width: max-content;
     height: max-content;
@@ -504,8 +576,9 @@ li::marker {
   .menu-logo {
     margin-left: 4vw;
   }
+  
   .title p{
-    width: 45vw;
+    width: 80vw;
   }
 }
 

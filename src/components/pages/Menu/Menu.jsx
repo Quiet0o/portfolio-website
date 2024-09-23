@@ -12,6 +12,17 @@ const Menu = () => {
     }
   };
 
+  const Menu = [
+    "about",
+    "work",
+    "projects",
+    "contact",
+  ];
+
+  const Capitalize = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
   return (
     <>
       <div className={isActive ? "main-menu-mobile" : "main-menu"}>
@@ -20,21 +31,17 @@ const Menu = () => {
             <div id="burger" className={isActive ? "burger-close" : null}></div>
           </div>
           <ol>
-            <li>
-              <a href="#about">
-                <span>01.</span> About
-              </a>
-            </li>
-            <li>
-              <a href="#projects">
-                <span>02.</span> Projects
-              </a>
-            </li>
-            <li>
-              <a href="#contact">
-                <span>03.</span> Contact
-              </a>
-            </li>
+            {Menu.map((name, position) => {
+              return (
+                <>
+                  <li>
+                    <a href={"#" + name}>
+                      <span>0{position + 1}.</span> {Capitalize(name)}
+                    </a>
+                  </li>
+                </>
+              );
+            })}
           </ol>
         </div>
       </div>
@@ -42,21 +49,17 @@ const Menu = () => {
         <div id="box">
           <div id="entries">
             <ol>
-              <li>
-                <a href="#about" onClick={toggleClass}>
-                  <span>01.</span> About
-                </a>
-              </li>
-              <li>
-                <a href="#projects" onClick={toggleClass}>
-                  <span>02.</span> Projects
-                </a>
-              </li>
-              <li>
-                <a href="#contact" onClick={toggleClass}>
-                  <span>03.</span> Contact
-                </a>
-              </li>
+              {Menu.map((name, position) => {
+                return (
+                  <>
+                    <li>
+                      <a href={"#" + name} onClick={toggleClass}>
+                        <span>0{position + 1}.</span> {Capitalize(name)}
+                      </a>
+                    </li>
+                  </>
+                );
+              })}
             </ol>
           </div>
         </div>

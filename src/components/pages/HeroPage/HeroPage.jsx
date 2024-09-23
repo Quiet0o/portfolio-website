@@ -58,7 +58,7 @@ const HeroPage = () => {
               <li>HTML</li>
               <li>CSS</li>
               <li>PHP</li>
-              <li>REACT</li>
+              <li>React</li>
               <li>Symfony</li>
               <li>Twig</li>
             </ul>

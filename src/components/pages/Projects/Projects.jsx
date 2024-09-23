@@ -5,9 +5,10 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Projects = () => {
   const desc = [
-    "Basic python web scraper app , integreted with firebase noSQL database.",
-    "Portfolio website to showacase my journey in to web develepoment world",
-    "Simple e-commerce project created for school project, integreted with firebase",
+    "Airbnb clone, fully dockerize, prisma, postgres, Next.js, typescript.",
+    "Basic python web scraper app , integrated with firebase noSQL database.",
+    "Portfolio website to showcase my journey into web development world",
+    "Simple e-commerce project created for school project, integrated with firebase",
     "Basic application to plan what to do. Mainly created with Symfony framework",
   ];
   const user = "Quiet0o";
@@ -28,7 +29,7 @@ const Projects = () => {
     <div className="project-page" >
       <div className="project-text" id="projects" >
         <h2>
-          <span>0.2</span> My projects <hr />
+          <span>0.3</span> My projects <hr />
         </h2>
       </div>
       <div className="projects-conteiner">
